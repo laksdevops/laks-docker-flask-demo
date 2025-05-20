@@ -7,7 +7,7 @@ pipeline {
 
         stage('Build docker image') {
             steps {  
-                sh 'docker build -t laksmikanthare905/flaskapp:$BUILD_NUMBER .'
+                sh 'sudo docker build -t laksmikanthare905/flaskapp:$BUILD_NUMBER .'
             }
         }
         stage('login to dockerhub') {
